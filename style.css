@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Spartan', sans-serif;
+}
+@media screen and (max-width:375px) {
+    body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+.container {
+    background-image: url(./images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:375px) {
+    .container {
+        background-image: url(./images/bg-pattern-top-mobile.svg);
+    }
+}
+.first-column {
+    color: hsl(300, 43%, 22%);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+@media screen and (max-width:375px) {
+    .first-column {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+.text-font {
+    font-size: 40px;
+    font-weight: 700;
+}
+.para-font {
+    font-size: 15px;
+}
+.ratings-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 70px;
+}
+.stars-col1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+}
+.reviews-rating {
+    background-color: hsl(300, 24%, 96%);
+    border: 2px solid hsl(300, 24%, 96%);
+    border-radius: 10px;
+    padding: 10px 20px 10px 30px;
+}
+.guru-rating {
+    background-color: hsl(300, 24%, 96%);
+    border: 2px solid hsl(300, 24%, 96%);
+    border-radius: 10px;
+    margin-left: 40px;
+    padding: 10px 50px 10px 20px;
+}
+.best-rating {
+    background-color: hsl(300, 24%, 96%);
+    margin-left: 80px;
+    border: 2px solid hsl(300, 24%, 96%);
+    border-radius: 10px;
+    padding: 10px 90px 10px 10px;
+}
+/* the padding in all the rating classes are reversed. this means that where it is to be padding right, it is in fact padding left. i don't know how that happened */
+.wrapper {
+    background-image: url(./images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:375px) {
+    .wrapper {
+        background-image: url(./images/bg-pattern-bottom-mobile.svg);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+.column-1 {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 80px 0 30px 100px;
+    padding: 30px 30px;
+    text-align: start;
+}
+@media screen and (max-width:375px) {
+    .column-1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 20px 20px;
+    }
+}
+.column-2 {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 100px 0 10px 50px;
+    padding: 30px 30px;
+    text-align: start;
+}
+@media screen and (max-width:375px) {
+    .column-2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 20px 20px;
+    }
+}
+.column-3 {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 120px 0 0 50px;
+    padding: 30px 30px;
+    text-align: start;
+}
+@media screen and (max-width:375px) {
+    .column-3 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 20px 20px;
+    }
+}
+.testimonial {
+    color: hsl(333, 80%, 67%);
+}
+.avatar-testimonial {
+    border-radius: 50%;
+    float: left;
+    clear: both;
+    width: 20%;
+    margin-right: 10px;
+    margin-bottom: 35px;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
